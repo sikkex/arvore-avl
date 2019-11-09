@@ -5,8 +5,8 @@
 typedef struct sNoAVL {
     int chave;
     int fb;
-    struct sNoAvl* esq;
-    struct sNoAvl* dir;
+    struct sNoAVL* esq;
+    struct sNoAVL* dir;
 } TNoAVL;
 
 void imprime(TNoAVL* no, int tab);
