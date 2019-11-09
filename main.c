@@ -13,7 +13,25 @@ void imprime(TNoAVL* no, int tab)
     } else printf("vazio");
 }
 
+TNoAVL* rotacao_direita(TNoAVL* p)
+{
+    TNoAVL* ptu;
+    ptu = p->esq;
+    p->esq = ptu->dir;
+    ptu->dir = p;
+    p = ptu;
+    return p;
+}
 
+TNoAVL* rotacao_esquerda(TNoAVL* p)
+{
+    TNoAVL* ptu;
+    ptu = p->dir;
+    p->dir = ptu->esq;
+    ptu->esq = p;
+    p = ptu;
+    return p;
+}
 
 int main() {
     printf("Hello, World!\n");
