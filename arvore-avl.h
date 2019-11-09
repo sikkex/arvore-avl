@@ -15,4 +15,7 @@ TNoAVL* rotacao_esquerda(TNoAVL* p);
 TNoAVL* rotacao_dupla_direita(TNoAVL* p);
 TNoAVL* rotacao_dupla_esquerda(TNoAVL* p);
 TNoAVL *insere(TNoAVL *p, int chave, int *flag);
+TNoAVL *remover(TNoAVL *p, int chave, int *flag);
+TNoAVL* caso1 (TNoAVL* p);
+TNoAVL* caso2 (TNoAVL* p);
 
