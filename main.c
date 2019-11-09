@@ -33,6 +33,20 @@ TNoAVL* rotacao_esquerda(TNoAVL* p)
     return p;
 }
 
+TNoAVL* rotacao_dupla_direita(TNoAVL* p)
+{
+    rotacao_esquerda(p->esq);
+    rotacao_direita(p);
+    return p;
+}
+
+TNoAVL* rotacao_dupla_esquerda(TNoAVL* p)
+{
+    rotacao_direita(p->dir);
+    rotacao_esquerda(p);
+    return p;
+}
+
 int main() {
     printf("Hello, World!\n");
     return 0;
